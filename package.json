@@ -1,0 +1,22 @@
+{
+  "name": "gameos-house",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "desktop": "vite build && electron .",
+    "package": "vite build && electron-packager . FoamWars --platform=win32 --arch=x64 --out=release --overwrite --asar=false --ignore=^/src --ignore=^/public --ignore=^/scripts --ignore=^/release"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "electron": "^44.7.1",
+    "vite": "^8.3.4",
+    "three": "^0.186.1",
+    "three-mesh-bvh": "^0.9.16"
+  },
+  "main": "electron/main.cjs",
+  "productName": "Foam Wars"
+}

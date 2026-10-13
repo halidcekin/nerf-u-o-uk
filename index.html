@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foam Wars: Ev</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='2' y='6' width='12' height='4' rx='2' fill='%232f6fe0'/><rect x='11' y='6' width='3' height='4' rx='1.5' fill='%23ff6a13'/></svg>" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app"></div>
+
+  <div id="hud" class="hidden">
+    <div id="crosshair"><i class="t"></i><i class="b"></i><i class="l"></i><i class="r"></i><b class="dot"></b></div>
+    <div id="hitmarker"><i></i><i></i><i></i><i></i></div>
+    <div id="popups"></div>
+    <div id="ammo">
+      <div class="mag"><span id="ammo-mag">12</span><small>/ <span id="ammo-res">36</span></small></div>
+      <div id="ammo-pips"></div>
+      <div id="ammo-msg"></div>
+    </div>
+    <div id="score">PUAN <span id="score-val">0</span></div>
+    <div id="pickup"></div>
+    <div id="fps"></div>
+    <div id="quality"></div>
+  </div>
+
+  <div id="start">
+    <div class="card">
+      <h1>FOAM WARS <span>· ev operasyonu</span></h1>
+      <p>3+1 evde köpük dart savaşı. Hedefleri vur, kutu kulelerini devir, dartlarını geri topla.</p>
+      <ul>
+        <li><kbd>W A S D</kbd> yürü</li>
+        <li><kbd>Shift</kbd> koş · <kbd>Space</kbd> zıpla · <kbd>C</kbd> çömel</li>
+        <li><kbd>Sol tık</kbd> ateş (basılı tut: seri)</li>
+        <li><kbd>Sağ tık</kbd> nişan al</li>
+        <li><kbd>R</kbd> şarjör değiştir · <kbd>E</kbd> yakındaki dartları topla</li>
+        <li><kbd>T</kbd> hedefleri sıfırla · <kbd>L</kbd> lambalar · <kbd>F2</kbd> kalite</li>
+      </ul>
+      <button id="play" disabled>OYNA</button>
+      <p id="loading" class="small">Yükleniyor…</p>
+      <p class="small">Fareyi kilitlemek için tıkla. Çıkmak için <kbd>Esc</kbd>.</p>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

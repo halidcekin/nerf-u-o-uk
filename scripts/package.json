@@ -1,0 +1,22 @@
+{
+  "name": "gameos-asset-scripts",
+  "private": true,
+  "type": "module",
+  "description": "Dev tooling: fetch + optimise the CC0 Poly Haven assets into ../public/assets. Run: npm i && npm run fetch",
+  "dependencies": {
+    "@gltf-transform/core": "^4.5.1",
+    "@gltf-transform/extensions": "^4.5.1",
+    "@gltf-transform/functions": "^4.5.1",
+    "ktx2-encoder": "^0.6.0",
+    "meshoptimizer": "^1.3.0",
+    "sharp": "^0.34.0"
+  },
+  "overrides": {
+    "sharp": "$sharp"
+  },
+  "scripts": {
+    "fetch": "node fetch-polyhaven.mjs",
+    "fetch:force": "node fetch-polyhaven.mjs --force",
+    "hdri-sun": "node hdri-sun.mjs"
+  }
+}
